@@ -1,0 +1,50 @@
+.containerAll {
+  background: transparent;
+  height: 700px;
+  margin: 0;
+}
+.containerUp {
+  display: flex;
+  border-bottom: 0.5px solid snow;
+  justify-content: space-around;
+  background: none;
+}
+.nav-left p,.nav-right p{
+  margin: 10px 0px;
+}
+.nav-left,
+.nav-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 30px;
+  color: snow;
+  font-size: 0.8rem;
+  gap: 10px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 766px) {
+  .containerUp {
+    display: block;
+    border-bottom: 0.5px solid snow;
+    justify-content: center;
+    background: none;
+  }
+  .nav-left{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+    
+  }
+  .nav-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    color: snow;
+    font-size: 10px;
+  
+  }
+}

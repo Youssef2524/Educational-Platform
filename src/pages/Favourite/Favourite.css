@@ -1,0 +1,310 @@
+.fav-nav{
+    background-color: #003cff;
+    height: 150px;
+}
+.favourite{
+    display: flex;
+}
+ .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 50px
+  }
+  
+ 
+  .card-items{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+
+  
+  /* Styles for the individual cart items */
+  .cart-item {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 1rem;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 0.75rem;
+    margin-left: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border: 1px solid black;
+    border-radius: 10px;
+   
+  }
+  .cart-item:hover{
+    background-color: rgb(236, 233, 233);
+  }
+
+  
+  /* Styles for the close icon */
+  .close-icon {
+    color: gray;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    display: flex;
+    align-self: start;
+  }
+  .close-icon:hover{
+    color: red;
+  }
+  /* Styles for the cart item image */
+  .cart-item img {
+    width: 20rem;
+    height: 16rem;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  
+  /* Styles for the cart item title */
+  .cart-item h2 {
+    width: 20rem;
+    font-size: 25px;
+  }
+  .cart-item p{
+   font-weight: bold;
+   width: 20rem;
+   font-size: 25px;
+    color: #003cff;
+  }
+  
+
+ 
+  
+  /* Styles for the "Reset Cart" button */
+  .reset-button {
+    padding: 1.5rem;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    background-color: black;
+    color: white;
+    cursor: pointer;
+   
+    width: 33.33%;
+    height: 2rem;
+  }
+  .reset-button:hover{
+    transition-duration: 0.3s;
+    background-color: #003cff;
+  }
+  
+
+  .go-shopping-button {
+    margin-top: 2rem;
+    color: #003cff;
+    cursor: pointer;
+border: none;
+background: none;
+text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+.go-shopping-button:hover {
+
+  color: black;
+}
+
+
+  
+  /* Styles for the main content container */
+  .main-content {
+    width: 66.66%;
+    background-color: rgb(247, 244, 244);
+    padding: 1.5rem;
+    margin-left: 4rem;
+    margin-top: 2.25rem;
+  }
+  
+  /* Styles for the border and padding */
+  .border-padding {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    border-bottom: 1px solid gray;
+    padding-bottom: 1.5rem;
+  }
+  
+  /* Styles for the heading "Cart Total" */
+  .cart-heading {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  
+  /* Styles for the subtotal and price */
+  .subtotal {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1rem;
+  }
+  
+  /* Styles for the price */
+  .price {
+    font-family: 'titleFont';
+    font-weight: bold;
+    font-size: 1.125rem;
+  }
+  
+  /* Styles for the shipping text */
+  .shipping {
+    display: flex;
+    align-items: start;
+    gap: 1rem;
+    font-size: 1rem;
+  }
+  
+  /* Styles for the total amount */
+  .total-amount {
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+  }
+  
+  /* Styles for the total price */
+  .total-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #003cff;
+  }
+  
+  /* Styles for the checkout button */
+  .checkout-button {
+    font-size: 1rem;
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    transition-duration: 0.3s;
+  }
+  
+  /* Hover styles for the checkout button */
+  .checkout-button:hover {
+    background-color: #003cff;
+  }
+
+  @media screen and (max-width: 766px) {
+    .favourite{
+      display: flex;
+      flex-direction: column;
+    }
+    .container {
+      margin-top: 30px;
+    }
+    .card-items{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 0px;
+    }
+    .cart-item {
+      padding: 0.75rem;
+      gap: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  
+    .cart-item img {
+      width: 15rem;
+      height: 10rem;
+    }
+  
+    .cart-item h2 {
+      width: 15rem;
+    }
+    .card-items p{
+      width: 15rem;
+    }
+  .close-icon{
+    display: flex;
+  }
+    .reset-button {
+      padding: 2rem;
+      width: 100%;
+    }
+  
+    .go-shopping-button {
+      margin-top: 1.5rem;
+    }
+  
+    .main-content {
+      width: 80%;
+      margin-left: 2rem;
+      margin-top: 1.5rem;
+    }
+  
+    .subtotal,
+    .shipping {
+      font-size: 0.875rem;
+    }
+  
+    .total-amount {
+      margin-top: 1rem;
+    }
+  
+    .checkout-button {
+      margin-top:1rem;
+    }
+  }
+
+  @media screen and (min-width: 767px) and (max-width: 1024px) {
+    .favourite{
+      display: flex;
+      flex-direction: column;
+    }
+    .container {
+      margin-top: 30px;
+      
+
+    }
+  
+    .cart-item {
+      padding: 0.75rem;
+      gap: 1rem;
+    }
+  
+ 
+  
+   
+  
+    .reset-button {
+      padding: 1rem;
+    }
+  
+    .go-shopping-button {
+      margin-top: 1.5rem;
+    }
+  
+    .main-content {
+      width: 80%;
+      margin-left: 2rem;
+      margin-top: 1.5rem;
+    }
+  
+    .subtotal,
+    .shipping {
+      font-size:20px ;}
+      .subtotal,
+      .shipping {
+        font-size: 0.875rem;
+      }
+  
+      .total-amount {
+        margin-top: 1rem;
+      }
+  
+      .checkout-button {
+        margin-top: 1rem;
+      }
+  }

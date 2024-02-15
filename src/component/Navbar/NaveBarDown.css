@@ -1,0 +1,178 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  z-index: 100;
+}
+.navbar h2 {
+  color: white;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.navbar-nav {
+  display: flex;
+  list-style: none;
+}
+
+.nav-item {
+  margin-right: 10px;
+}
+.nav-item.active a {
+  color: white !important;
+}
+
+.nav-item a {
+  color: white;
+  text-decoration: none;
+}
+.nav-item a:hover {
+  color: black;
+  font-weight: 600;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgb(0, 115, 160);
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-item {
+  margin: 5px 0;
+  list-style: none;
+}
+
+.dropdown-item a:hover {
+  color: #000;
+  list-style: none;
+}
+.nav-button {
+  background-color: rgb(70, 202, 255);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+}
+.nav-button:hover {
+  background-color: white;
+  color: rgb(70, 202, 255);
+}
+.menue {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 5px;
+  padding: 10px;
+
+  font-family: "Slabo 27px", serif;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.top-menue {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 766px) {
+ 
+  
+  .navbar > :nth-child(4) {
+   
+    position: absolute;
+    top: 48px;
+  }
+
+  .navbar > :nth-child(2) {
+    position: absolute;
+    left: 270px;
+    top: 9px;
+  }
+
+  .menue {
+    flex-direction: column;
+    position: fixed;
+    border: 1px solid #020202;
+    border-radius: 75px;
+    background-color: rgb(70, 202, 255);
+  color: white;
+    top: -500px;
+    left: 150px;
+    width: 100px;
+    height: 480px;
+    align-items: center;
+    z-index: 9999;
+    transition: all 0.6s ease-in-out;
+  }
+
+  .top-menue {
+    display: block;
+    top: 0px;
+
+    color: blue;
+
+    border-radius: 20%;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1022px) {
+ 
+  .navbar > :nth-child(4) {
+   
+    position: absolute;
+    top: 48px;
+  }
+  .navbar > :nth-child(2) {
+    position: absolute;
+    left: 390px;
+    top: 10px;
+  }
+
+  .menue {
+    flex-direction: column;
+    position: fixed;
+    border: 1px solid #020202;
+    border-radius: 75px;
+    background-color: rgb(0, 115, 160);
+
+    top: -500px;
+    left: 350px;
+    width: 100px;
+    height: 480px;
+    align-items: center;
+    z-index: 9999;
+    transition: all 0.6s ease-in-out;
+  }
+
+  .top-menue {
+    display: block;
+    top: 0px;
+    margin-left: 250px;
+    color: blue;
+
+    border-radius: 20%;
+    cursor: pointer;
+  }
+}

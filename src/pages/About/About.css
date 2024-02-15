@@ -1,0 +1,67 @@
+.team {
+  display: flex;
+}
+
+.team-image-container img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20%;
+}
+.team-card {
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.team-card-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.team-title {
+  color: #003cff;
+}
+.team-job {
+  color: gray;
+  margin-bottom: 10px;
+}
+.team-p {
+  display: flex;
+  text-align: center;
+  color: rgb(101, 106, 148);
+}
+.team-icons {
+  color: #003cff;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.team-icon {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 766px) {
+  .team {
+    display: flex;
+    flex-direction: column;
+  }
+  .team-image-container img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 20%;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+  .team {
+    display: flex;
+    flex-direction: column;
+  }
+}

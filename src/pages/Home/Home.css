@@ -1,0 +1,178 @@
+.home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 240px;
+  left: 340px;
+  color: white;
+}
+
+.home-button {
+  background-color: rgb(70, 202, 255);
+  color: white;
+  padding: 14px 24px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+.home-button:hover {
+  background-color: white;
+  color: rgb(70, 202, 255);
+}
+
+.educat {
+  background-image: url("../../assets/images/img111.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  color: white;
+}
+.educatP {
+  display: flex;
+  width: 50%;
+  text-align-last: center;
+}
+.home-about {
+  position: relative;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.home-about-button {
+  background-color: white;
+  color: #003cff;
+  padding: 10px 20px;
+  border: 1px solid #003cff;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+.home-about-num {
+  display: flex;
+  flex-direction: row;
+  gap: 1px;
+  width: 40%;
+  margin-top: 10px;
+}
+.home-about-numP {
+  display: flex;
+  flex-direction: column;
+}
+.home-about-numspan {
+  color: #003cff;
+  font-size: 20px;
+}
+
+.person-test {
+  position: absolute;
+  width: 13rem;
+  height: 13rem;
+  object-fit: cover;
+  right: 10rem;
+  top: 6rem;
+}
+.right-test > :nth-child(1) {
+  position: absolute;
+  width: 13rem;
+  height: 13rem;
+  border: 2px solid rgb(70, 202, 255);
+  right: 10rem;
+  top: 5rem;
+}
+.right-test > :nth-child(2) {
+  position: absolute;
+  width: 13rem;
+  height: 13rem;
+  border: 2px solid rgb(70, 202, 255);
+  right: 8rem;
+  top: 7rem;
+  background-color: rgb(70, 202, 255);
+}
+@media screen and (max-width: 766px) {
+  .home-content {
+    position: absolute;
+    top: 440px;
+    left: 18px;
+  }
+  .home-content h2 {
+    font-size: 17px;
+  }
+  .course-container-h2 {
+    letter-spacing: 0px;
+    font-size: 19px;
+  }
+  .course-card {
+    margin-bottom: 30px;
+    margin-left: 0px;
+  }
+  .educat h2 {
+    font-size: 20px;
+  }
+  .home-about {
+    position: relative;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .person-test {
+    width: 10rem;
+    height: 10rem;
+    right: 6rem;
+    top: 36rem;
+  }
+  .right-test > :nth-child(1) {
+    width: 10rem;
+    height: 10rem;
+    right: 6.5rem;
+    top: 35rem;
+  }
+  .right-test > :nth-child(2) {
+    width: 10rem;
+    height: 10rem;
+    right: 5rem;
+    top: 36.5rem;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+  .home-content {
+    position: absolute;
+    top: 240px;
+    left: 150px;
+  }
+  .course-card {
+    margin-bottom: 30px;
+    margin-left: 20px;
+  }
+  .person-test {
+    width: 15rem;
+    height: 15rem;
+    right: 6rem;
+    top: 13rem;
+  }
+  .right-test > :nth-child(1) {
+    width: 15rem;
+    height: 15rem;
+    right: 6.5rem;
+    top: 12rem;
+  }
+  .right-test > :nth-child(2) {
+    width: 15rem;
+    height: 15rem;
+    right: 5rem;
+    top: 13.5rem;
+  }
+}
